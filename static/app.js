@@ -227,6 +227,7 @@ var loadGist = function(gistId) {
 
 var init = function(gistId) {
     if (typeof gistId === 'undefined' || gistId === '') {
+      debugger;
         loadGist('7442b083383908d7c925981ff082fea7');
         showFooter('footerIntro');
     } else {
