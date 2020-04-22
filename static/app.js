@@ -25,7 +25,7 @@
                 requestUrl = this.apiBaseUrl + endpoint;
 
             this.xhr.open('GET', requestUrl, true);
-            this.xhr.setRequestHeader('Accept', 'application/json');
+            this.xhr.setRequestHeader('Accept', '*/*');
 
             self.onload = function() {
                 if (self.status >= 200 && self.status < 400) {
