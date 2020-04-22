@@ -156,7 +156,7 @@ var loadGist = function(gistId) {
                 // parse markdown files
                 if (files.markdown.length) {
                     var html = '';
-                    var md = window.markdownit({linkify: true});
+                    var md = window.markdownit({linkify: true, html:true});
                     md.use(window.markdownItAnchor, {
                         level: 1,
                         permalink: true,
